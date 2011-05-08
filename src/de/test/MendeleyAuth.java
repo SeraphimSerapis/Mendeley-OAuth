@@ -41,6 +41,7 @@ public class MendeleyAuth {
 			consumer.setTokenWithSecret(ACCESSTOKEN, ACCESSTOKENSECRET);
 		}
 		try {
+			// Try the mendeley Author search
 			tryAPICall("http://api.mendeley.com/oapi/documents/search/authors:Wolfgang+Reinhardt/");
 		} catch (Exception e) {
 			e.printStackTrace();
